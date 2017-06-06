@@ -16,7 +16,8 @@
         "diacritical",
         "accent",
         "strip",
-        "remove"
+        "remove",
+        "fold"
     ],
     "repository": "https://github.com/julianjensen/yads.git",
     "license": "MIT",
