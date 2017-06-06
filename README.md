@@ -60,7 +60,7 @@ precomposed version.
 
 ```js
 const
-     strip = require( 'kitchen-sink' ),
+     strip = require( 'yads' ),
      testStr = `Rügen caractères spéciaux contrairement à la langue française`;
 
 console.log( `${testStr} =>\n${strip.precomposed( testStr )}` );
