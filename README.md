@@ -2,6 +2,8 @@ Yet Another Diacritic Remover
 =============================
 But better, I think, read on... 
 
+[![Coveralls Status][coveralls-image]][coveralls-url] [![Build Status][travis-image]][travis-url]
+
 ## The Problem
 
 This is a non-broken diacritic remover. There are number of similar modules available but they're all based on the same code
@@ -97,3 +99,9 @@ console.log( `packed letters only: ${strip.packed( simpleStr )}` );
 console.log( `packed letters and numbers only: ${strip.packed_alphanum( simpleStr )}` );
 // 42caracteresspeciaux
 ```
+
+[coveralls-image]: https://coveralls.io/repos/github/julianjensen/yads/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/julianjensen/yads?branch=master
+
+[travis-url]: https://travis-ci.org/julianjensen/yads
+[travis-image]: http://img.shields.io/travis/julianjensen/yads.svg
