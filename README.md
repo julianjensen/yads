@@ -2,7 +2,7 @@ Yet Another Diacritic Remover
 =============================
 But better, I think, read on... 
 
-[![Coveralls Status][coveralls-image]][coveralls-url] [![Build Status][travis-image]][travis-url]
+[![Coveralls Status][coveralls-image]][coveralls-url] [![Build Status][travis-image]][travis-url]  [![Dependency Status][depstat-image]][depstat-url]
 
 ## The Problem
 
@@ -105,3 +105,6 @@ console.log( `packed letters and numbers only: ${strip.packed_alphanum( simpleSt
 
 [travis-url]: https://travis-ci.org/julianjensen/yads
 [travis-image]: http://img.shields.io/travis/julianjensen/yads.svg
+
+[depstat-url]: https://gemnasium.com/github.com/julianjensen/yads
+[depstat-image]: https://gemnasium.com/badges/github.com/julianjensen/yads.svg
