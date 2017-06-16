@@ -2,7 +2,7 @@ Yet Another Diacritic Remover
 =============================
 But better, I think, read on... 
 
-[![Coveralls Status][coveralls-image]][coveralls-url] [![Build Status][travis-image]][travis-url]  [![Dependency Status][depstat-image]][depstat-url] [![npm version][npm-image]][npm-url]
+[![Coveralls Status][coveralls-image]][coveralls-url] [![Build Status][travis-image]][travis-url]  [![Dependency Status][depstat-image]][depstat-url] [![npm version][npm-image]][npm-url] [![License][license-image]][license-url]
 
 ## The Problem
 
@@ -112,3 +112,5 @@ console.log( `packed letters and numbers only: ${strip.packed_alphanum( simpleSt
 [npm-url]: https://badge.fury.io/js/yads
 [npm-image]: https://badge.fury.io/js/yads.svg
 
+[license-url]: https://github.com/julianjensen/yads/blob/master/LICENSE
+[license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
