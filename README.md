@@ -112,5 +112,5 @@ console.log( `packed letters and numbers only: ${strip.packed_alphanum( simpleSt
 [npm-url]: https://badge.fury.io/js/yads
 [npm-image]: https://badge.fury.io/js/yads.svg
 
-[license-url]: https://github.com/julianjensen/yads/blob/master/LICENSE
+[license-url]: https://github.com/julianjensen/yads/master/LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
