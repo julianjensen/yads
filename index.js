@@ -100,15 +100,21 @@ const defaultDiacriticsRemovalMap = [
 defaultDiacriticsRemovalMap.forEach( o => [ ...o.letters ].forEach( l => diacriticsMap[ l ] = o.base ) );
 
 const diacritics = {
-    _slower: str => str.replace( /[\u0300-\u036F]|[\u1AB0-\u1AFF]|[\u1DC0-\u1DFF]|[\u20D0-\u20FF]|[\uFE20-\uFE2F]/g, '' ).replace( /[^\u0000-\u007E]/g, a => diacriticsMap[ a ] || a ),
-    _faster: str => str.replace( /[^\u0000-\u007E]/g, a => diacriticsMap[ a ] || a ),
-    precomposed: imStr => ( diacritics.remove_diacritics = str => diacritics._faster( str ) ) && imStr && diacritics._faster( imStr ),
-    combining: imStr => ( diacritics.remove_diacritics = str => diacritics._slower( str ) ) && imStr && diacritics._slower( imStr ),
-    remove_diacritics: str => diacritics._slower( str ),
+    _slower: str => typeof str === 'string' && str.replace( /[\u0300-\u036F]|[\u1AB0-\u1AFF]|[\u1DC0-\u1DFF]|[\u20D0-\u20FF]|[\uFE20-\uFE2F]/g, '' ).replace( /[^\u0000-\u007E]/g, a => diacriticsMap[ a ] || a ),
+    _faster: str => typeof str === 'string' && str.replace( /[^\u0000-\u007E]/g, a => diacriticsMap[ a ] || a ),
+    __mode: null,
+
+    precomposed: fStr => ( diacritics.__mode = diacritics._faster )( fStr ),
+    combining: sStr => ( diacritics.__mode = diacritics._slower )( sStr ),
+
+    remove_diacritics: str => diacritics.__mode( str ),
+
     letters: str => module.exports.remove_diacritics( str ).replace( /[^a-z ]/gi, '' ),
     packed: str => module.exports.remove_diacritics( str ).replace( /[^a-z]/gi, '' ),
     alphanum: str => module.exports.remove_diacritics( str ).replace( /[^a-z0-9 ]/gi, '' ),
     packed_alphanum: str => module.exports.remove_diacritics( str ).replace( /[^a-z0-9]/gi, '' )
 };
+
+diacritics.__mode = diacritics._slower;
 
 module.exports = diacritics;

@@ -6,6 +6,7 @@ But better, I think, read on...
 [![Codacy Badge][codacy-image]][codacy-url]
 [![david-dm][david-dm-image]][david-dm-url]
 [![bitHound Code][bithound-image]][bithound-url]
+[![Code Climate][codeclimate-image]][codeclimate-url]
 
 ## The Problem
 
@@ -129,3 +130,6 @@ console.log( `packed letters and numbers only: ${strip.packed_alphanum( simpleSt
 
 [bithound-image]: https://www.bithound.io/github/julianjensen/yads/badges/code.svg
 [bithound-url]: https://www.bithound.io/github/julianjensen/yads
+
+[codeclimate-image]: https://codeclimate.com/github/julianjensen/yads/badges/gpa.svg
+[codeclimate-url]: https://codeclimate.com/github/julianjensen/yads
