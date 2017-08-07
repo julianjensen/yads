@@ -7,6 +7,7 @@ But better, I think, read on...
 [![david-dm][david-dm-image]][david-dm-url]
 [![bitHound Code][bithound-image]][bithound-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
+[![Codebeat Badge][codebeat-image]][codebeat-url]
 
 ## The Problem
 
@@ -133,3 +134,6 @@ console.log( `packed letters and numbers only: ${strip.packed_alphanum( simpleSt
 
 [codeclimate-image]: https://codeclimate.com/github/julianjensen/yads/badges/gpa.svg
 [codeclimate-url]: https://codeclimate.com/github/julianjensen/yads
+
+[codebeat-image]: https://codebeat.co/badges/c9e3a1e5-4335-40ef-a607-ee82b3dae2a5
+[codebeat-url]: https://codebeat.co/projects/github-com-julianjensen-yads-master
